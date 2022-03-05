@@ -8,12 +8,17 @@ Details:
 - First generate some data points as your input data for regression. You can use the following function or develop your own function for data generation
 
 def generate_data(n, beta_0, beta_1):
+
 x = np.arange(n)
+
 e = np.random.uniform(-10,10, size=(n,))
+
 y = beta_0 + beta_1* x + e
+
 return x,y
 
 i.e., you can call this function to create 100 data points (x,y)
+
 x, y = generate_data(100, 2, .4)
 
 
